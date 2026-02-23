@@ -3,10 +3,12 @@
 // @namespace    https://github.com/folktroll/userscripts/grabby
 // @version      26.2.23.1015
 // @description  Shift+C = grab + escalate + copy | Shift+X = full reset
-// @author       You
+// @author       Folktroll
+// @icon         https://raw.githubusercontent.com/Folktroll/userscripts/refs/heads/main/grabby/icon.png
 // @match        *://*/*
 // @grant        GM_setClipboard
 // @run-at       document-idle
+// @license      MIT
 // ==/UserScript==
 
 (() => {
