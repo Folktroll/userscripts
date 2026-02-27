@@ -137,7 +137,7 @@ const formatEntry = (company, title, dates) => {
   dates = dates.replaceAll(/[^0-9-]+/g, '');
   dates = dates.replace(/(\d{4})-\1/, '$1');
 
-  return `- ${company.trim()}, ${title.trim()}, ${dates.trim() || 'n/a'}\r\n`.replaceAll(/\s+/g, ' ');
+  return `- ${company.trim()}, ${title.trim()}, ${dates.trim() || 'n/a'}`.replaceAll(/\s+/g, ' ') + '\r\n';
 };
 
 const parseExperienceList = (olElement, name, profile) => {
@@ -285,7 +285,7 @@ const showToast = (html, type = 'info', duration = 5000, onClick = null) => {
 const showSuccessToast = (profile) => showToast(
   `<b><i>${profile.name}</i></b>: ${profile.totalExp} exp. <small style="opacity:.7">(click to copy)</small>`,
   'success',
-  12000,
+  5000,
   () => GM_setClipboard(profile.copyStr),
 );
 
@@ -293,7 +293,7 @@ const showSuccessToast = (profile) => showToast(
 (() => {
   let lastKey = '';
   document.addEventListener('keydown', (e) => {
-    if (e.altKey && e.key === 'c') {
+    if (e.altKey && e.code === 'KeyC') {
       if (lastKey === 'alt+c') {
         const slug    = getSlug();
         const profile = slug && profileCache[slug];
