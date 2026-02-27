@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [FT] LinkedIn Experience Scraper
 // @namespace    https://github.com/Folktroll/userscripts/linkedin
-// @version      26.2.27.706
+// @version      26.2.27.730
 // @description  Extracts LinkedIn experience and copies to clipboard (Alt+C+C)
 // @author       Folktroll
 // @icon         https://raw.githubusercontent.com/Folktroll/userscripts/refs/heads/main/linkedin/icon.png
