@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         Grabby
 // @namespace    https://github.com/folktroll/userscripts/grabby
-// @version      26.2.23.1015
+// @version      26.2.27.734
 // @description  Shift+C = grab + escalate + copy | Shift+X = full reset
 // @author       Folktroll
 // @icon         https://raw.githubusercontent.com/Folktroll/userscripts/refs/heads/main/grabby/icon.png
 // @match        *://*/*
 // @grant        GM_setClipboard
 // @run-at       document-idle
+// @updateURL    https://raw.githubusercontent.com/Folktroll/userscripts/refs/heads/main/grabby/grabby.user.js
+// @downloadURL  https://raw.githubusercontent.com/Folktroll/userscripts/refs/heads/main/grabby/grabby.user.js
 // @license      MIT
 // ==/UserScript==
 
